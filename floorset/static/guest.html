@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a table</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/static/base.css">
+<link rel="stylesheet" href="/static/guest.css">
+</head>
+<body>
+<div id="app" class="shell" aria-busy="true">
+  <header class="vh">
+    <div class="brand" id="brand"></div>
+    <div class="nights">
+      <p class="kicker">Night</p>
+      <div class="chips" id="nights" role="group" aria-label="Choose a night"></div>
+    </div>
+  </header>
+  <section class="night-info" id="nightInfo" aria-live="polite"></section>
+  <main class="body">
+    <nav class="floors" id="floors" aria-label="Floors"></nav>
+    <div class="planwrap">
+      <svg class="plan" id="plan" role="group" aria-label="Floor plan"></svg>
+      <div class="legend" id="legend"></div>
+    </div>
+    <aside class="rail" id="rail" aria-live="polite"></aside>
+  </main>
+  <footer class="foot">
+    <button class="btn ghost sm" id="findBtn" type="button">Find or cancel a booking</button>
+    <span id="policy" class="faint"></span>
+  </footer>
+</div>
+<script type="module" src="/static/guest.js"></script>
+</body>
+</html>
