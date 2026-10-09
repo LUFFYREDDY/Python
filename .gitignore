@@ -108,3 +108,7 @@ venv.bak/
 .try
 .vscode/
 .vs/
+
+# Floorset trial database
+floorset/*.db
+floorset/*.db-*
